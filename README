@@ -1,4 +1,5 @@
-!Demo to reload requirejs instance without browser reload
+Demo to reload requirejs instance without browser reload
+
         This demo wants to show how you can force reload the
         requirejs files without reload the browser. It uses the
         require.onResourceLoad() function to grab all the files that
