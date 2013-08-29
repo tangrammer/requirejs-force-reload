@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <title>requirejs-force-reload</title>
+        <!-- data-main attribute tells require.js to load
+             scripts/main.js after require.js loads. -->
+        <script  src="scripts/jquery-2.0.3.min.js"></script>
+        <script data-main="scripts/main" src="scripts/require.js"></script>
+    </head>
+    <body>
+        <h1>Demo to reload requirejs instance without browser reload</h1>
+        <p>This demo wants to show how you can force reload the
+        requirejs files without reload the browser. It uses the
+        require.onResourceLoad() function to grab all the files that
+        participate in the app, and later uses the
+        require.undef(id_file_name) function to remove the files from
+        requirejs and then try  to load the main file again.
+          </p>
+        <p> <br><b>click the increment button to maintain the value</b> (so far
+        only the counter) of the current requirejs instance.<br><br> Later
+       <b> click on initialize button to reset the requirejs instance</b>
+        (and for it the counter too) 
+        <div id="content" ></div>
+        <div><br><br><hr>@juanantonioruz https://github.com/juanantonioruz/</div>
+    </body>
+</html>
