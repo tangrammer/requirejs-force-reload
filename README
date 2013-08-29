@@ -1,0 +1,10 @@
+!Demo to reload requirejs instance without browser reload
+        This demo wants to show how you can force reload the
+        requirejs files without reload the browser. It uses the
+        require.onResourceLoad() function to grab all the files that
+        participate in the app, and later uses the
+        require.undef(id_file_name) function to remove the files from
+        requirejs and then try  to load the main file again.
+
+Here there is an online version 
+https://dl.dropboxusercontent.com/u/8688858/requirejs-force-reload/project.html
